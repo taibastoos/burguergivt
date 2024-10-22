@@ -1,0 +1,90 @@
+/* Tela de carregamento */
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+#loading-icon {
+    width: 100px;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #8B4513;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background-color: #FFD700;
+    padding: 100px 20px;
+    text-align: center;
+    color: #8B4513;
+}
+
+.menu-section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.menu-section h2 {
+    text-align: center;
+    color: #B22222;
+}
+
+.menu-item {
+    background-color: #F5F5DC;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
